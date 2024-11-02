@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "President Terms",
-      "setup": "pip install beautifulsoup4 pandas",
+      "setup": "pip install pandas",
       "run": "python grader.py get_president_terms",
       "input": "",
       "output": "",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Approval Changes",
-      "setup": "pip install beautifulsoup4 pandas",
+      "setup": "pip install pandas",
       "run": "python grader.py calculate_approval_changes",
       "input": "",
       "output": "",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Count Presidents",
-      "setup": "pip install beautifulsoup4",
+      "setup": "pip install pandas",
       "run": "python grader.py generate_president_dataframe",
       "input": "",
       "output": "",
