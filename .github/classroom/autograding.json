@@ -1,9 +1,9 @@
 {
   "tests": [
     {
-      "name": "Count occurences",
-      "setup": "pip install beautifulsoup4",
-      "run": "python grader.py get_frequency rabbit",
+      "name": "President Terms",
+      "setup": "pip install beautifulsoup4 pandas",
+      "run": "python grader.py get_president_terms",
       "input": "",
       "output": "",
       "comparison": "exact",
@@ -11,19 +11,9 @@
       "points": 10
     },
     {
-      "name": "Count occurrences 2",
-      "setup": "pip install beautifulsoup4",
-      "run": "python grader.py get_frequency Alice",
-      "input": "",
-      "output": "",
-      "comparison": "exact",
-      "timeout": 1,
-      "points": 10
-    },
-    {
-      "name": "Web scraping",
-      "setup": "pip install beautifulsoup4",
-      "run": "python grader.py count_links_on_page",
+      "name": "Approval Changes",
+      "setup": "pip install beautifulsoup4 pandas",
+      "run": "python grader.py calculate_approval_changes",
       "input": "",
       "output": "",
       "comparison": "exact",
@@ -33,24 +23,13 @@
     {
       "name": "Count Presidents",
       "setup": "pip install beautifulsoup4",
-      "run": "python grader.py count_presidents_by_party_and_year 1900",
-      "input": "",
-      "output": "",
-      "comparison": "exact",
-      "timeout": 1,
-      "points": 10
-    },
-    {
-      "name": "Count Presidents 2",
-      "setup": "pip install beautifulsoup4",
-      "run": "python grader.py count_presidents_by_party_and_year 1999",
+      "run": "python grader.py generate_president_dataframe",
       "input": "",
       "output": "",
       "comparison": "exact",
       "timeout": 1,
       "points": 10
     }
-    
 
     
     
