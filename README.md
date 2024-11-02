@@ -19,7 +19,6 @@ Please read the following instructions to complete the lab assignment.
 - Question 1:
 ```console
 python grader.py get_president_terms
-```
 ```  
 
 
