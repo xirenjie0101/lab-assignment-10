@@ -17,6 +17,7 @@ def main():
             f'ERROR: Expected answer is different than your answer. '
             f'Expected: {expected_ans}, Your answer: {actual_ans}'
         )
+        print("Test passed successfully!")
 
     elif fn_name == 'calculate_approval_changes':
 
@@ -28,6 +29,7 @@ def main():
             f'ERROR: Expected answer is different than your answer. '
             f'Expected: {expected_ans}, Your answer: {actual_ans}'
         )
+        print("Test passed successfully!")
 
     elif fn_name == 'generate_president_dataframe':
 
@@ -39,11 +41,12 @@ def main():
             f'ERROR: Expected answer is different than your answer. '
             f'Expected: {expected_ans}, Your answer: {actual_ans}'
         )
+        print("Test passed successfully!")
 
     else:
         assert False, "Error in testcase: Unknown function name"
 
-    print("Success")
+    print("Success!")
 
 if __name__ == "__main__":
     main()
