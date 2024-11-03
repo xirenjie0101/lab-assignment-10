@@ -3,13 +3,11 @@ import sys
 import requests
 import pandas as pd
 
+
 def main():
     fn_name = sys.argv[1]  # Function name to test
 
-
-
     if fn_name == 'get_president_terms':
-        #query_parameter = sys.argv[2] # word being searched
 
         # Fetch expected result from a webpage (e.g., Project Gutenberg)
         expected_ans = requests.get("https://dsci.isi.edu/slides/data/presidents").json()
@@ -32,7 +30,6 @@ def main():
         )
 
     elif fn_name == 'generate_president_dataframe':
-        
 
         # Fetch expected result from the Presidents Wikipedia page
         expected_ans = pd.read_json(requests.get("https://dsci.isi.edu/slides/president_df").json())
