@@ -10,7 +10,7 @@ def main():
     if fn_name == 'get_president_terms':
 
         # Fetch expected result from a webpage (e.g., Project Gutenberg)
-        expected_ans = requests.get("https://dsci.isi.edu/slides/data/presidents").json()
+        expected_ans = requests.get("https://dsci.isi.edu/slides/president_terms").json()
         actual_ans = run.get_president_terms()
 
         assert actual_ans == expected_ans, (
