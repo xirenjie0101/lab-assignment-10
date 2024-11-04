@@ -22,7 +22,7 @@
     },
     {
       "name": "Count Presidents",
-      "setup": "pip install beautifulsoup4",
+      "setup": "pip install beautifulsoup4 pandas",
       "run": "python grader.py generate_president_dataframe",
       "input": "",
       "output": "",
@@ -30,8 +30,5 @@
       "timeout": 1,
       "points": 10
     }
-
-    
-    
   ]
 }

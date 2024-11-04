@@ -25,12 +25,12 @@ python grader.py get_president_terms
 
 - Question 2:
 ```console
-python grader.py  calculate approval changes
+python grader.py  calculate_approval_changes
 ```
 
 - Question 3:
 ```console
-python grader.py approval changes.json
+python grader.py generate_president_dataframe
 ```
  
 
