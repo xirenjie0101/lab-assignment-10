@@ -6,7 +6,7 @@ Please read the following instructions to complete the lab assignment.
 
 1. File structure:
 
-    a. lab-assignment-10.pdf - Assignment PDF that contains the questions and the detailed description of the assignment.
+    a. `lab-assignment-10.pdf` - Assignment PDF that contains the questions and the detailed description of the assignment.
 
     b. `run.py` - This is the file with a template where you can make changes to answer the questions in the assignment. You should implement the classes in the assignment alongside all their attributes and methods and test if they work as expected or not.
 
