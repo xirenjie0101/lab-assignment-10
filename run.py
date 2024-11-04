@@ -94,12 +94,19 @@ def generate_president_dataframe():
     :return: DataFrame containing the presidents, their party, terms, and approval changes
     """
     # Load the JSON data files
-    with open("presidents_terms.json", "r") as f:
-        presidents_terms = json.load(f)
+    #with open("presidents_terms.json", "r") as f:
+    #    presidents_terms = json.load(f)
     
-    with open("approval_changes.json", "r") as f:
-        approval_changes = json.load(f)
+    #with open("approval_changes.json", "r") as f:
+    #    approval_changes = json.load(f)
     
+
+    presidents_terms = get_president_terms()
+    
+    #with open("approval_changes.json", "r") as f:
+    approval_changes = calculate_approval_changes()
+
+
     # Prepare DataFrame columns
     names = []
     parties = []
@@ -120,5 +127,11 @@ def generate_president_dataframe():
         "Approval Change": approval_change
     })
     
+    # Replace NaN with None for JSON compatibility
+    df = df.where(pd.notnull(df), None)
+    
+    # Convert DataFrame to dictionary for JSON serialization
+    #json_data = df.to_json()
+    #return json_data
 
     return df
